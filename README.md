@@ -1,7 +1,7 @@
-# CCAssistant
-### created by: betabeta
+# CCAssistant by BetaBeta10
+A Tkinter GUI application for ComputerCraft media conversion. Was made for personal use in my friend's modded server
 
-A Tkinter GUI application for ComputerCraft utilities.
+![example gif](example.gif)
 
 ## Features
 
@@ -38,6 +38,7 @@ Run the application:
 ```bash
 python main.py
 ```
+OR run the .exe file (buggy) in dist/CCAssistant.exe
 
 ### Image Conversion
 1. Go to "Image to NFP" tab
@@ -54,15 +55,3 @@ python main.py
 1. Go to "Audio/Video to DFPWM" tab
 2. Select an audio or video file
 3. Click "Convert to DFPWM"
-
-## Project Structure
-
-```
-CCAssistant/
-├── main.py                 # Main GUI application
-├── converters/
-│   └── convert_nfp.py      # NFP conversion script
-├── libs/
-│   └── nfp.py              # NFP library
-└── requirements.txt        # Python dependencies
-```
