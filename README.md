@@ -9,6 +9,7 @@ A Tkinter GUI application for ComputerCraft media conversion. Was made for perso
   - Configure monitor width, height, and text scale
   - Automatic dimension calculation
   - Direct output to same directory as input
+  - converters/convert_nfp.py is from [DownrightNifty](https://github.com/DownrightNifty/computercraft-stuff)
 
 - **Audio/Video to DFPWM**: Convert MP3, MP4, WAV, MKV, and other formats to ComputerCraft DFPWM audio format
   - Uses ffmpeg for conversion
