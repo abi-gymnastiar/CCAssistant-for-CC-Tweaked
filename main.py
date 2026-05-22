@@ -116,8 +116,9 @@ class CCConverterGUI:
             height = int(self.monitor_height.get())
             scale = float(self.text_scale.get())
 
-            resize_width = int(width * 7 / scale)
-            resize_height = int(height * 5 / scale)
+            # Calculate characters using correct formula from monitorsize calculator
+            resize_width = round((64 * width - 20) / (6 * scale))
+            resize_height = round((64 * height - 20) / (9 * scale))
 
             self.calc_label.config(text=f"Resize Width: {resize_width} | Resize Height: {resize_height}")
         except (ValueError, ZeroDivisionError):
@@ -156,8 +157,9 @@ class CCConverterGUI:
             height = int(self.monitor_height.get())
             scale = float(self.text_scale.get())
 
-            resize_width = int(width * 7 / scale)
-            resize_height = int(height * 5 / scale)
+            # Calculate characters using correct formula from monitorsize calculator
+            resize_width = round((64 * width - 20) / (6 * scale))
+            resize_height = round((64 * height - 20) / (9 * scale))
 
             input_path = self.image_path.get()
             output_path = str(Path(input_path).with_suffix(".nfp"))
